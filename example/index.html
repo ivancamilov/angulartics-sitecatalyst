@@ -8,8 +8,17 @@
   <script src="../node_modules/angulartics/dist/angulartics.min.js"></script>
   <script src="../node_modules/angulartics/dist/angulartics-debug.min.js"></script>
   <script src="../lib/angulartics-sitecatalyst.js"></script>
-  <!-- Add sitecatalystjs code below -->
+  <!-- Add your sitecatalystjs code (s_code) below -->
+  <script>
+    base_url = '';
+  </script>
   <script src="../lib/s_code.js"></script>
+  <script>
+    s.pageName = "test: home";
+    s.channel = "test: channel";
+    s.prop1 = "";
+    s.prop2 = "";
+  </script>
 </head>
 <body ng-app="sample">
 
@@ -39,17 +48,16 @@
     <button analytics-on analytics-category="Commands" class="btn btn-success">Button 3</button>
 
     <!-- note that analytics-category is never inferred, and is required by GA... if you leave it out, no event will be tracked -->
-    <button analytics-on analytics-link-track-vars="events,eVar80"
-      analytics-link-track-events="event36"
-      analytics-event="event36"
-      analytics-label="Este es un evento"
-      analytics-e-var80="descuento"
-      analytics-e-var81="imagen" class="btn btn-info">Button 4</button>
+    <button analytics-on analytics-link-track-vars="events,eVar71"
+      analytics-link-track-events="'event80"
+      analytics-event="event80"
+      analytics-label="Clic Header"
+      analytics-e-var71="logo LOE" class="btn btn-info">Button 4</button>
     <hr>
 
     <p class="alert alert-success">
       Open the network inspector in your browser, click any of the nav options or buttons above and you'll see the analytics
-      request being executed. Then check <a class="alert-link" href="https://my.omniture.com/login/">your Adobe Analytics dashboard</a>.
+      request being executed. Then check <a class="alert-link" href="https://my.omniture.com/login/">your SiteCatalyst dashboard</a>.
     </p>
   </div>
 
