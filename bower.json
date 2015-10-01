@@ -1,5 +1,6 @@
 {
   "name": "angulartics-sitecatalyst",
+  "version": "0.1.2",
   "main": "./dist/angulartics-sitecatalyst.min.js",
   "dependencies": {
     "angulartics": "~0.20"

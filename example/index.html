@@ -48,11 +48,28 @@
     <button analytics-on analytics-category="Commands" class="btn btn-success">Button 3</button>
 
     <!-- note that analytics-category is never inferred, and is required by GA... if you leave it out, no event will be tracked -->
-    <button analytics-on analytics-link-track-vars="events,eVar71"
+    <button analytics-on
+      analytics-link-track-vars="events,eVar71"
       analytics-link-track-events="'event80"
       analytics-event="event80"
       analytics-label="Clic Header"
       analytics-e-var71="logo LOE" class="btn btn-info">Button 4</button>
+
+    <div
+      analytics-on="click"
+      analytics-link-track-vars="events,eVar80,eVar81,eVar82,eVar83,eVar84,eVar85,products"
+      analytics-link-track-events="event36"
+      analytics-events="event36"
+      analytics-event="event36"
+      analytics-e-var80="tipo"
+      analytics-e-var81="boton de conversion"
+      analytics-e-var82="Posición 1"
+      analytics-e-var83="test"
+      analytics-e-var84="pruebas"
+      analytics-e-var85="paqprueba"
+      analytics-products="los productinis"
+      analytics-label="click en oferta"
+    class="btn btn-default">Button 5</div>
     <hr>
 
     <p class="alert alert-success">
